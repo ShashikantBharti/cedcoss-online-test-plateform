@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+
+/* Global */
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    color: #fff;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+
+/* Header */
+
+header {
+    background: #333;
+    text-transform: uppercase;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 20px;
+    color: #999;
+}
+
+header ul li a:hover {
+    color: #fff;
+}
+
+header .logo a {
+    color: yellow;
+}
+
+header .logo a span {
+    color: red;
+}
+
+
+/* Main Content */
+
+.content {
+    display: flex;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: auto;
+    margin: 10px;
+    padding: 20px;
+    color: #f4f4f4;
+    background: #333;
+}
+
+
+/* Login Form */
+
+.login {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.login form {
+    background: #d3d2d2;
+    padding: 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login form input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    outline: none;
+    border: none;
+    background: #fff;
+    font-size: 17px;
+}
+
+.login form a#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+}
+
+p.message {
+    margin: 10px;
+}
+
+
+/* Registration */
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.register form {
+    border: 2px solid grey;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #333;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+.form-group,
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    width: 300px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    color: #999;
+}
+
+
+/* Test Section */
+
+.question-section {
+    padding: 50px 0;
+}
+
+.question {
+    margin: 30px 0;
+}
+
+.question,
+.pagination {
+    /* display: none; */
+}
+
+.question p {
+    margin: 10px 0;
+}
+
+.question label {
+    margin-left: 10px;
+}
+
+.pagination {
+    margin-bottom: 30px;
+}
+
+.pagination a {
+    padding: 5px 10px;
+    border: 1px solid rgb(153, 153, 153);
+    transition: all 0.3s ease-in-out;
+}
+
+.pagination a:hover {
+    background: #999;
+    color: #fff;
+}
+
+.current {
+    background: #999;
+    color: #fff;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Description */
+
+.description ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.description ul li::before {
+    content: "\27A4";
+    margin-right: 5px;
+}
+
+
+/* Topics */
+
+.topics {
+    padding: 50px;
+}
+
+.topics ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.topics ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.topics ul li::before {
+    content: "\27A4";
+    margin-right: 5px;
+}
