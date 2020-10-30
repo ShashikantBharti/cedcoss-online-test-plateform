@@ -8,6 +8,7 @@ $(document).ready(function() {
         $('.login').fadeOut();
     });
     $(document).on('click', '.option', recordAnsers);
+    $('#submit-test-btn').on('click', submitTest);
 });
 
 function recordAnsers() {
@@ -32,7 +33,7 @@ function login() {
         data: { username: username, userpassword: userpassword },
         success: function(res) {
             if (res == 1) {
-                window.location.href = 'index.php';
+                window.location.href = window.location.href;
             } else {
                 $('.error-message').html('User ID or Password is Incorrect.');
             }

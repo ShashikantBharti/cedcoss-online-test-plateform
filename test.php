@@ -67,7 +67,7 @@
                 }
                 ?>
                 <br><br>
-                <a href="#" class="btn">Submit</a>
+                <a href="result.php?topic=<?php echo $id; ?>" class="btn" id="submit-test-btn">Submit</a>
                 <a href="#" class="btn">Quit</a>
             </div>
             <hr> 

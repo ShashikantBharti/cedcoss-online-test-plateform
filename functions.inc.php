@@ -18,5 +18,4 @@ function get_safe_value($conn, $str){
     }
 }
 
-
 ?>
