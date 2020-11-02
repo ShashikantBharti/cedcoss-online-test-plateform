@@ -8,7 +8,10 @@ $(document).ready(function() {
         $('.login').fadeOut();
     });
     $(document).on('click', '.option', recordAnsers);
-    $('#submit-test-btn').on('click', submitTest);
+    $('#start-btn').on('click', function() {
+        $('.pagination').show();
+        $('.question').show();
+    });
 });
 
 function recordAnsers() {

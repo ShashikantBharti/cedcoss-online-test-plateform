@@ -45,7 +45,7 @@
             <br>
             <div class="top">
                 <h3>User: <span><?php echo $user['name']; ?></span></h3>
-                <a href="#" class="btn">Start</a>
+                <button class="btn" id="start-btn">Start</button>
                 <h3>Time: <time>00:20:00</time></h3>
             </div>
             <br>

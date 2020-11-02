@@ -212,7 +212,7 @@ footer {
 
 .question,
 .pagination {
-    /* display: none; */
+    display: none;
 }
 
 .question p {
